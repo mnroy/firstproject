@@ -4,3 +4,20 @@
 <h2>Name length {{user.length}}</h2>
 <h2>{{gretUser()}}</h2>
 <h2>Location: {{siteUrl}}</h2>
+<!--  Property Binding -->
+<input [id]="myId" type="text" value="Jastin bar"><br><br>
+<input [disabled]="true" [id]="myId" type="text" value="Jastin bar">
+<!-- class binding -->
+<h2 [class]="PinkColor">codevolution1</h2>
+<h2 [class]="orangeColor">codevolution2</h2>
+<h2 [class]="special">codevolution3</h2>
+<!-- boolian -->
+<h2 [class.orange-color]="hasEror">Boolian data</h2>
+<!-- condition bess multi class binding -->
+<h2 [ngClass]="messageClass">Condition bess multi class binding</h2>
+
+<!-- style binddin -->
+<h2 [style.color]="'hotpink'">Style Binding inline style</h2>
+<h2 [style.color]="hasEror ? 'red': 'green'">Style binding condition</h2>
+<h2 [style.color]="highLightColor">Class binding 3</h2>
+<h2 [ngStyle]="multiStyle">Multi style binding 4</h2>
